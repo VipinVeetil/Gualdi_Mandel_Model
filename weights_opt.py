@@ -49,4 +49,6 @@ class WeightsOptimization(object):
 	def optimize(self, seed_weights, prices):
 		opt = minimize(self.F,np.array(seed_weights), args=(np.array(prices),), method =  self.method)
 		optimal_weights = self.transform(opt.x)
+		for weight in optimal_weights:
+			assert weight >= 0.000
 		return optimal_weights

@@ -51,6 +51,7 @@ class Firm(object):
 		""" demands from different buyers in current period """
 		self.output_allocation = {}
 		""" allocation of output to different buyers in current period """
+		self.number_of_buyers = 0
 	
 	def produce(self):
 		""" produce output """
@@ -76,15 +77,11 @@ class Firm(object):
 	def compute_weights(self):
 		seed_weights = self.inputs_weights.values()[1:]
 		""" existing weights are used as seed weights to run optimization algorithm """
-		""" seed weights is less than total number of weights because
-			
-			"""
 		prices = self.inputs_prices.values()
 		weights = self.weights_opt.optimize(seed_weights, prices)
-		self.inputs_weights = {}
 		count = 0
-		for weight in weights:
-			self.inputs_weights[count] = weight
+		for ID in self.inputs_weights:
+			self.inputs_weights[ID] = weights[count]
 			count += 1
 
 	def allocate_output_to_demanders(self):
