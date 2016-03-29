@@ -6,10 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		FC0933AD1CAA0F7100C8F099 /* economic_functions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = economic_functions.py; sourceTree = "<group>"; };
+		FC0933AE1CAA0F8700C8F099 /* economy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = economy.py; sourceTree = "<group>"; };
+		FC0933AF1CAA0F9600C8F099 /* firm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = firm.py; sourceTree = "<group>"; };
+		FC0933B01CAA0FB400C8F099 /* household.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = household.py; sourceTree = "<group>"; };
+		FC0933B11CAA0FB400C8F099 /* parameters.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = parameters.py; sourceTree = "<group>"; };
+		FC0933B21CAA0FB400C8F099 /* run.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = run.py; sourceTree = "<group>"; };
+		FC0933B31CAA0FB400C8F099 /* start.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = start.py; sourceTree = "<group>"; };
+		FC0933B41CAA0FB400C8F099 /* time_step.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = time_step.py; sourceTree = "<group>"; };
+		FC0933B51CAA0FB400C8F099 /* weights_opt.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = weights_opt.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		FC0933A11CAA0E2200C8F099 = {
 			isa = PBXGroup;
 			children = (
+				FC0933AD1CAA0F7100C8F099 /* economic_functions.py */,
+				FC0933AE1CAA0F8700C8F099 /* economy.py */,
+				FC0933AF1CAA0F9600C8F099 /* firm.py */,
+				FC0933B01CAA0FB400C8F099 /* household.py */,
+				FC0933B11CAA0FB400C8F099 /* parameters.py */,
+				FC0933B21CAA0FB400C8F099 /* run.py */,
+				FC0933B31CAA0FB400C8F099 /* start.py */,
+				FC0933B41CAA0FB400C8F099 /* time_step.py */,
+				FC0933B51CAA0FB400C8F099 /* weights_opt.py */,
 			);
 			sourceTree = "<group>";
 		};
